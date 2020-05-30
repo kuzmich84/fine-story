@@ -1,4 +1,4 @@
-.welcome {
+.welcome-wrapper {
   position: relative;
   width: 800px;
   margin-top: -29px;
@@ -6,7 +6,7 @@
   flex-direction: column;
 
 
-  &::before {
+  &::after {
     content: "";
     display: flex;
     position: absolute;
@@ -17,9 +17,10 @@
     height: 287px;
     z-index: 1;
     margin-left: -65px;
-    margin-top: -50px;
+    margin-top: -85px;
   }
 }
+
 
 .welcome__title {
   .set-font-Ubuntu-bold();
@@ -38,5 +39,25 @@
   color: @white;
   text-transform: capitalize;
   z-index: 2000;
+}
+
+.welcome-hi {
+  position: absolute;
+  width: 230px;
+  height: 80px;
+  border: 7px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -34px;
+  margin-top: -200px;
 
 }
+
+.welcome p {
+  font-size: 50px;
+  .set-font-Ubuntu-bold();
+  color: rgb(255, 255, 255);
+  line-height: 0.56;
+}
+
