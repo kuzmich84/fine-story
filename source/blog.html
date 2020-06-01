@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/montserrat-v14-cyrillic-900.woff2" as="font" crossorigin="anonymous">
   <!-- Pixel Glass -->
   <link href="pixelPerfect/pixel-glass/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="pixelPerfect/index.css">
+  <link rel="stylesheet" href="pixelPerfect/blog.css">
   <script src="pixelPerfect/pixel-glass/script.js"></script>
   <!-- // Pixel Glass -->
   <!-- // Picturefill -->
@@ -28,58 +28,81 @@
 </head>
 <body class="main-body">
 <header class="page-header">
-  <div class="page-header__logo">
-    <img src="img/logo.png" width="213" height="92" alt="Логотип">
-  </div>
-  <nav class="main-nav">
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item"><a class="site-list__link" href="index.html">главная</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="portfolio.html">портфолио</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="about.html">о нас</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="price.html">услуги</a></li>
-      <li class="site-list__item site-list__item--current"><a class="site-list__link" href="blog.html">блог</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="contacts.html">контакты</a></li>
-    </ul>
-  </nav>
-  <div class="page-header-wrapper">
-    <div class="page-header__social social">
-      <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Мы в контакте">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-vk"></use>
-          </svg>
-        </a></li>
-        <li class="social__item"><a class="social__link social__link--insta" href="#" aria-label="Мы в инстаграмм">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Мы в фейсбук">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a></li>
-        <li class="social__item"><a class="social__link social__link--vimeo" href="#" aria-label="Мы в вимео">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-vimeo"></use>
-          </svg>
-        </a></li>
-      </ul>
+  <div class="page-header-content">
+    <div class="page-header__logo">
+      <img src="img/logo.png" width="213" height="92" alt="Логотип">
     </div>
-    <div class="page-header__miniature image-mini">
-      <ul class="image-mini__list">
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="https://via.placeholder.com/77x77" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="https://via.placeholder.com/77x77" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="https://via.placeholder.com/77x77" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="https://via.placeholder.com/77x77" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="https://via.placeholder.com/77x77" alt="Фото"/></a></li>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a class="site-list__link" href="index.html">главная</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="portfolio.html">портфолио</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="about.html">о нас</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="price.html">услуги</a></li>
+        <li class="site-list__item site-list__item--current"><a class="site-list__link" href="blog.html">блог</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="contacts.html">контакты</a></li>
       </ul>
+    </nav>
+    <div class="page-header-wrapper">
+      <div class="page-header__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Мы в контакте">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a></li>
+          <li class="social__item"><a class="social__link social__link--insta" href="#" aria-label="Мы в инстаграмм">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Мы в фейсбук">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a></li>
+          <li class="social__item"><a class="social__link social__link--vimeo" href="#" aria-label="Мы в вимео">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-vimeo"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+      <div class="page-header__miniature image-mini">
+        <ul class="image-mini__list">
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+1}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+2}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+3}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+4}" alt="Фото"/></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>
-<main>
-  <h1>Привет!</h1>
+<main class="about-main">
+  <h1 class="visually-hidden">Список статей</h1>
+  <section class="articles">
+    <article class="articles-item">
+      <div class="articles-miniature"><img src="img/uslovie-semki.jpg" width="448" height="300" alt="Фото статьи"></div>
+      <div class="articles-card">
+        <h2 class="articles-title">Условие съемки</h2>
+        <div class="articles-desc">
+        <p>Перед заказом свадебной видеосъемки просим Вас ознакомиться с нашим условиями съемки.</p>
+        <p>Заключая с нами договор, Вы соглашаетесь полностью с нашим взглядом в части проведения, стиля съемки и длительности финального фильма.</p>
+        </div>
+        <button class="btn" type="button">Читать далее</button>
+        <div class="articles-footer">
+          <div class="articles-date">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#calendar"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </section>
 </main>
 <footer>
 </footer>
