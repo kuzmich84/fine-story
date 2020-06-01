@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/montserrat-v14-cyrillic-900.woff2" as="font" crossorigin="anonymous">
   <!-- Pixel Glass -->
   <link href="pixelPerfect/pixel-glass/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="pixelPerfect/index.css">
+  <link rel="stylesheet" href="pixelPerfect/portfolio.css">
   <script src="pixelPerfect/pixel-glass/script.js"></script>
   <!-- // Pixel Glass -->
   <!-- // Picturefill -->
@@ -28,6 +28,7 @@
 </head>
 <body class="main-body">
 <header class="page-header">
+  <div class="page-header-content">
   <div class="page-header__logo">
     <img src="img/logo.png" width="213" height="92" alt="Логотип">
   </div>
@@ -77,9 +78,37 @@
       </ul>
     </div>
   </div>
+  </div>
 </header>
-<main>
-  <h1>Привет!</h1>
+<main class="portfolio-main">
+  <div class="portfolio-content">
+  <h1 class="visually-hidden">Портфолио</h1>
+  <section class="portfolio">
+    <ul class="portfolio-list">
+      <li class="portfolio-list__item"><a href="#">Все</a></li>
+      <li class="portfolio-list__item portfolio-list__item--active"><a href="#">Свадебное</a></li>
+      <li class="portfolio-list__item"><a href="#">Детское</a></li>
+      <li class="portfolio-list__item"><a href="#">Коммерческое</a></li>
+    </ul>
+
+  </section>
+  <section class="video">
+    <div class="video-content">
+    <ul class="video-list">
+      <li class="video-list__item"><a href="#"><img src="img/Stasya-Alexey.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Elena-Konstantin.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Marina-Vladimir.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Roman-Viktoriya.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Alesya-Ivan.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Natalia-Anton.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Katya-Oleg.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Yura-Galya.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Katya-Maxim.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+      <li class="video-list__item"><a href="#"><img src="img/Katya-Igor.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+    </ul>
+    </div>
+  </section>
+  </div>
 </main>
 <footer>
 </footer>
