@@ -1,5 +1,6 @@
 .portfolio-main {
-  width: 71.5%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .portfolio {
@@ -9,6 +10,7 @@
 
 .portfolio-content {
   padding: 46px 45px;
+  padding-top: 25px;
   padding-bottom: 0;
 
 }
@@ -65,6 +67,16 @@
   color: #ffffff;
   padding: 0;
   margin: 0;
+}
+
+.portfolio h2 {
+  &::before {
+    content: none;
+  }
+
+  &::after {
+    content: none;
+  }
 }
 
 .portfolio p {

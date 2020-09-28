@@ -121,9 +121,7 @@ img {
 }
 
 .main-body {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
+  height: 100%;
 }
 
 * {
@@ -132,20 +130,63 @@ img {
 }
 
 .page-main {
-  width: 71.5%;
-  height: auto;
+  width: 100%;
+  height: 100vh;
   background-image: url("../img/bg-main.jpg");
   background-size: cover;
-  flex-grow: 1;
-
+  background-attachment: fixed;
 }
 
 .page-main__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
-  margin: 0 auto;
-  padding: 0 150px;
   height: 100%;
+  margin-left: 535px;
+}
+
+.main {
+  margin-left: 470px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container h2 {
+  .set-font-Ubuntu-bold();
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.56;
+  letter-spacing: normal;
+  color: #4e4e4e;
+  position: relative;
+  margin: 0;
+  margin-bottom: 85px;
+
+  &::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 101px;
+    height: 2px;
+    background-color: #33cc99;
+    top: 40px;
+  }
+
+  &::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 164px;
+    height: 2px;
+    background-color: #33cc99;
+    top: 45px;
+  }
 }

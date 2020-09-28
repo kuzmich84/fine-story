@@ -14,8 +14,8 @@
   <!-- // Pixel Glass -->
   <!-- // Picturefill -->
   <script>
-    // Picture element HTML5 shiv
-    document.createElement("picture");
+      // Picture element HTML5 shiv
+      document.createElement("picture");
   </script>
   <script src="js/picturefill.js" async=""></script>
   <!-- // Picturefill -->
@@ -29,70 +29,282 @@
 <body class="main-body">
 <header class="page-header">
   <div class="page-header-content">
-  <div class="page-header__logo">
-    <img src="img/logo.png" width="213" height="92" alt="Логотип">
-  </div>
-  <nav class="main-nav">
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--current"><a class="site-list__link" href="index.html">главная</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="portfolio.html">портфолио</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="about.html">о нас</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="price.html">услуги</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="blog.html">блог</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="contacts.html">контакты</a></li>
-    </ul>
-  </nav>
-  <div class="page-header-wrapper">
-    <div class="page-header__social social">
-      <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Мы в контакте">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-vk"></use>
-          </svg>
-        </a></li>
-        <li class="social__item"><a class="social__link social__link--insta" href="#" aria-label="Мы в инстаграмм">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Мы в фейсбук">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a></li>
-        <li class="social__item"><a class="social__link social__link--vimeo" href="#" aria-label="Мы в вимео">
-          <svg width="15" height="20">
-            <use xlink:href="img/sprite.svg#icon-vimeo"></use>
-          </svg>
-        </a></li>
-      </ul>
+    <div class="page-header__logo">
+      <img src="img/logo.png" width="213" height="92" alt="Логотип">
     </div>
-    <div class="page-header__miniature image-mini">
-      <ul class="image-mini__list">
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()}" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+1}" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+2}" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+3}" alt="Фото"/></a></li>
-        <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+4}" alt="Фото"/></a></li>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current"><a class="site-list__link" href="index.html">главная</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#portfolio">портфолио</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#about">о нас</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#price">услуги</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#articles">блог</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#contacts">контакты</a></li>
       </ul>
+    </nav>
+    <div class="page-header-wrapper">
+      <div class="page-header__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Мы в контакте">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a></li>
+          <li class="social__item"><a class="social__link social__link--insta" href="#" aria-label="Мы в инстаграмм">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Мы в фейсбук">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a></li>
+          <li class="social__item"><a class="social__link social__link--vimeo" href="#" aria-label="Мы в вимео">
+            <svg width="15" height="20">
+              <use xlink:href="img/sprite.svg#icon-vimeo"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+      <div class="page-header__miniature image-mini">
+        <ul class="image-mini__list">
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+1}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+2}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+3}" alt="Фото"/></a></li>
+          <li class="image-mini__item"><a class="image-mini__link" href="#"><img src="http://picsum.photos/77/77?r=${Math.random()+4}" alt="Фото"/></a></li>
+        </ul>
+      </div>
     </div>
-  </div>
   </div>
 </header>
-<main class="page-main">
+<section class="page-main">
   <div class="page-main__content">
-  <h1 class="visually-hidden">Видеосъемка в Санкт-Петербурге</h1>
-  <section class="welcome">
-    <div class="welcome-hi">
-      <p>Привет</p>
-    </div>
-    <div class="welcome-wrapper">
-    <h2 class="welcome__title">Я, Дмитрий Кучуков</h2>
-    <p class="welcome__text">видеограф</p>
+    <h1 class="visually-hidden">Видеосъемка в Санкт-Петербурге</h1>
+    <section class="welcome">
+      <div class="welcome-hi">
+        <p>Привет</p>
+      </div>
+      <div class="welcome-wrapper">
+        <h2 class="welcome__title">Я, Дмитрий Кучуков</h2>
+        <p class="welcome__text">видеограф</p>
+      </div>
+    </section>
+  </div>
+</section>
+<main class="main">
+  <section class="portfolio-main" id="portfolio">
+    <div class="portfolio-content container">
+      <h1 class="visually-hidden">Портфолио</h1>
+      <section class="portfolio">
+        <ul class="portfolio-list">
+          <li class="portfolio-list__item"><a href="#">Все</a></li>
+          <li class="portfolio-list__item portfolio-list__item--active"><a href="#">Свадебное</a></li>
+          <li class="portfolio-list__item"><a href="#">Детское</a></li>
+          <li class="portfolio-list__item"><a href="#">Коммерческое</a></li>
+        </ul>
+        <div class="portfolio-title">
+          <h2>Последние работы</h2>
+          <p>Видео</p>
+        </div>
+      </section>
+      <section class="video">
+        <h2 class="visually-hidden">Видео</h2>
+        <div class="video-content">
+          <ul class="video-list">
+            <li class="video-list__item"><a href="#"><img src="img/Stasya-Alexey.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <li class="video-list__item"><a href="#"><img src="img/Elena-Konstantin.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <li class="video-list__item"><a href="#"><img src="img/Marina-Vladimir.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <li class="video-list__item"><a href="#"><img src="img/Roman-Viktoriya.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <li class="video-list__item"><a href="#"><img src="img/Alesya-Ivan.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <li class="video-list__item"><a href="#"><img src="img/Natalia-Anton.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <li class="video-list__item"><a href="#"><img src="img/Katya-Oleg.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <li class="video-list__item"><a href="#"><img src="img/Yura-Galya.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+            <!--      <li class="video-list__item visually-hidden"><a href="#"><img src="img/Katya-Maxim.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>-->
+            <li class="video-list__item"><a href="#"><img src="img/Katya-Igor.jpg" width="400" height="225" alt="Свадебная съемка"></a></li>
+          </ul>
+        </div>
+      </section>
     </div>
   </section>
-  </div>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+      <h2>О нас</h2>
+      <div class="about-container">
+      <div class="about-photo"><img src="http://picsum.photos/331/338?r=${Math.random()}" alt=""></div>
+      <div class="about-text">
+        <h3>Дмитрий Кучуков</h3>
+        <p>Наша творческая лаборатория FineStory предлагает Вам запечатлеть особо важные моменты Вашей жизни, такие как свадьба, венчание, юбилеи и другие торжества.</p>
+        <p>Свадебная видеосъемка для нас является не только работой, но также увлечением и самым любимым делом. Мы предлагаем качественные видеофильмы по доступным ценам.</p>
+        <p>Ознакомиться с работами Вы можете в разделе <a href="portfolio.html">"Портфолио"</a>.</p>
+        <p>В своей работе мы учитываем Ваши пожелания и предложения, готовы воплотить самые оригинальные идеи и помочь в выборе мест для свадебной прогулки.</p>
+        <p>Связаться с нами Вы можете удобным для Вас способом в разделе <a href="contacts.html">"Контакты"</a>.</p>
+        <p>Со стоимостью нашей работы Вы можете ознакомится в разделе <a href="price.html">"Услуги и Цены"</a>.</p>
+        <p>С удовольствием ответим на любые Ваши вопросы.</p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <section class="price" id="price">
+    <div class="container">
+    <div class="price-content">
+      <h2>Наши услуги и цены</h2>
+      <ul class="price-list">
+        <li class="price-list__item">
+          <svg width="34" height="34">
+            <use xlink:href="img/sprite.svg#icon-price-maximum"></use>
+          </svg>
+          <h3>"Свадебный максимум"</h3>
+          <h4>25 000 руб.</h4>
+          <p>Видеосъемка в FUll HD в течение 10 часов;</p>
+          <p>Монтаж свадебного клипа(до 5 мин.);</p>
+          <p>Монтаж художественного свадебного фильма (до 30-50 мин.);</p>
+          <p>Запись всех фильмов и клипа на индивидуально оформленный Flash Disc;</p>
+          <p>Собственный автотранспорт.</p>
+          <p>Срок изготовления – до трех месяцев</p>
+        </li>
+        <li class="price-list__item">
+          <svg width="34" height="34">
+            <use xlink:href="img/sprite.svg#icon-price-standart"></use>
+          </svg>
+          <h3>"Свадебный стандарт"</h3>
+          <h4>20 000 руб.</h4>
+          <p>Видеосъемка в FUll HD в течение 8 часов;</p>
+          <p>Монтаж свадебного клипа(до 5 мин.);</p>
+          <p>Монтаж художественного свадебного фильма (до 40 мин.);</p>
+          <p>Запись всех фильмов и клипа на индивидуально оформленный Flash Disc;</p>
+          <p>Собственный автотранспорт.</p>
+          <p>Срок изготовления – до трех месяцев</p>
+        </li>
+        <li class="price-list__item">
+          <svg width="34" height="34">
+            <use xlink:href="img/sprite.svg#icon-price-minimum"></use>
+          </svg>
+          <h3>"Свадебный минимум"</h3>
+          <h4>15 000 руб.</h4>
+          <p> Видеосъемка ЗАГС + прогулка (вне зависимости от времени);</p>
+          <p>Монтаж свадебного клипа (до 5 мин.);</p>
+          <p>Монтаж репортажного фильма (до 20 мин.);</p>
+          <p>Запись всех фильмов и клипа на индивидуально оформленный Flash Disc;</p>
+          <p>Собственный автотранспорт.</p>
+          <p>Срок изготовления – до трех месяцев</p>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <section class="articles" id="articles">
+    <div class="container">
+    <div class="articles-content">
+      <h2>Наш блог</h2>
+      <article class="articles-item">
+        <div class="articles-miniature"><img src="img/uslovie-semki.jpg" width="448" height="300" alt="Фото статьи"></div>
+        <div class="articles-card">
+          <h2 class="articles-title">Условие съемки</h2>
+          <div class="articles-desc">
+            <p>Перед заказом свадебной видеосъемки просим Вас ознакомиться с нашим условиями съемки.</p>
+            <p>Заключая с нами договор, Вы соглашаетесь полностью с нашим взглядом в части проведения, стиля съемки и длительности финального фильма.</p>
+          </div>
+          <a class="btn" href="blog-details.html">Читать далее</a>
+          <div class="articles-footer">
+            <div class="articles-date">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#calendar"></use>
+              </svg>
+              <span>08/03/2014</span>
+            </div>
+            <div class="articles-wrapper">
+              <div class="articles-views">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#eye"></use>
+                </svg>
+                <span>59</span>
+              </div>
+              <div class="articles-reviews">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#review"></use>
+                </svg>
+                <span>19</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+      <article class="articles-item">
+        <div class="articles-miniature"><img src="img/videosemka-svadby.jpg" width="448" height="300" alt="Фото статьи"></div>
+        <div class="articles-card">
+          <h2 class="articles-title">Свадебная видеосъемка</h2>
+          <div class="articles-desc">
+            <p>Свадьба — один из наиболее важных и романтичных дней в жизни каждого человека. В этот прекрасный день рождается новая семья, сбываются мечты и происходят чудеса. </p>
+            <p>Он наполнен яркими красками, бесконечными сюрпризами и морем эмоциональных моментов.</p>
+            <p>Видеооператор на свадьбу снимет все яркие моменты праздника…</p>
+          </div>
+          <a class="btn" href="blog-details.html">Читать далее</a>
+          <div class="articles-footer">
+            <div class="articles-date">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#calendar"></use>
+              </svg>
+              <span>01/05/2014</span>
+            </div>
+            <div class="articles-wrapper">
+              <div class="articles-views">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#eye"></use>
+                </svg>
+                <span>88</span>
+              </div>
+              <div class="articles-reviews">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#review"></use>
+                </svg>
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+      <ul class="articles-list">
+        <li class="articles-list__item articles-list__item-prev"><a href="#"></a></li>
+        <li class="articles-list__item articles-list__item--active"><a href=""><span>1</span></a></li>
+        <li class="articles-list__item"><a href=""><span>2</span></a></li>
+        <li class="articles-list__item"><a href=""><span>3</span></a></li>
+        <li class="articles-list__item articles-list__item--active articles-list__item-next"><a href="#"></a></li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="container">
+    <div class="contacts-wrapper">
+      <h2>Контакты</h2>
+      <div class="contacts-content">
+      <div class="contacts-address">
+        <h3>Друзья!</h3>
+        <p>Мы будем рады пообщаться с Вами в неформальной обстановке, рассказать о всех нюансах видеосъемки и обсудить сценарий торжества.</p>
+        <p>Вы сможете задать все интересующие Вас вопросы.</p>
+        <a href="tel:+79215777600"><p>Телефон: <span>+7-921-5-777-600</span></p></a>
+        <a href="mailto:mail@fine-story.ru"><p>Email: <span>mail@fine-story.ru</span></p></a>
+      </div>
+      <div class="contacts-feedback">
+        <h2>Напишите нам</h2>
+        <form action="#" method="post">
+          <label><input class="contacts-input_name" type="text" placeholder="ваше имя" name="name"></label>
+          <label><input class="contacts-input_phone" type="tel" placeholder="ваш телефон" name="phone"></label>
+          <label><textarea class="contacts-input_textarea" placeholder="ваше сообщение" name="message"></textarea></label>
+          <button class="btn contacts-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
 </main>
 <footer>
 </footer>
