@@ -1,30 +1,10 @@
-.welcome-wrapper {
-  position: relative;
-  width: 800px;
-  margin-top: -29px;
-  display: flex;
-  flex-direction: column;
-
-
-  &::after {
-    content: "";
-    display: flex;
-    position: absolute;
-    background-image: url("../img/shape-index.png");
-    background-repeat: no-repeat;
-    background-size: 926px 287px;
-    width: 926px;
-    height: 287px;
-    z-index: 1;
-    margin-left: -65px;
-    margin-top: -85px;
-  }
+.welcome {
+  z-index: 2;
 }
-
 
 .welcome__title {
   .set-font-Ubuntu-bold();
-  font-size: 70px;
+  font-size: 60px;
   line-height: 28px;
   color: @white;
   z-index: 2000;
@@ -33,12 +13,11 @@
 }
 
 .welcome__text {
-  .set-font-Ubuntu-bold();
-  font-size: 36px;
+  .set-font-Ubuntu-regular();
+  font-size: 26px;
   line-height: 28px;
   color: @white;
   text-transform: capitalize;
-  z-index: 2000;
 }
 
 .welcome-hi {
