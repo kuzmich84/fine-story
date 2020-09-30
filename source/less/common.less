@@ -184,22 +184,28 @@ img {
 
   &::before {
     content: '';
-    display: flex;
     position: absolute;
+    display: flex;
+    margin-top: 10px;
     width: 101px;
     height: 2px;
     background-color: #33cc99;
-    top: 40px;
+    bottom: -26px;
   }
+}
 
-  &::after {
+.container h2 span {
+  position: relative;
+
+  &::before {
     content: '';
-    display: flex;
     position: absolute;
+    display: flex;
+    margin-top: 10px;
     width: 164px;
     height: 2px;
     background-color: #33cc99;
-    top: 45px;
+    bottom: -7px;
   }
 }
 
@@ -226,6 +232,7 @@ img {
 .back-to-top svg {
   fill: @white;
 }
+
 @media (max-width: @tablet-width) {
   .mobile-nav-toggle {
     display: block;
@@ -261,3 +268,28 @@ img {
 }
 
 
+@media (max-width: @mobile-width) {
+  .container h2 {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 40px;
+
+    &::before {
+      bottom: -15px;
+      width: 40px;
+    }
+
+  }
+
+  .container span {
+    &::before {
+      bottom: -7px;
+      width: 80px;
+    }
+  }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

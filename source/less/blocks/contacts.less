@@ -19,15 +19,11 @@
 }
 
 
-
-
 .contacts-content h2 {
   .set-font-Montserrat-bold();
   font-size: 18px;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.89;
-  letter-spacing: 0.9px;
   color: #6b6b6b;
   text-transform: uppercase;
 }
@@ -59,20 +55,21 @@
 
 .contacts-address {
   width: 460px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   margin-right: 2%;
 }
 
 .contacts-feedback {
   width: 475px;
 }
+
 .contacts-feedback h2 {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .contacts-address p {
-.set-font-Montserrat-regular();
+  .set-font-Montserrat-regular();
   font-size: 12px;
   font-weight: 300;
   font-stretch: normal;
@@ -134,7 +131,7 @@
 }
 
 .contacts-input_phone {
- width: 252px;
+  width: 252px;
 }
 
 .contacts-input_textarea {
@@ -162,7 +159,7 @@
 }
 
 .contacts-address h3 {
- .set-font-Montserrat-regular();
+  .set-font-Montserrat-regular();
   font-size: 16px;
   font-weight: 700;
   font-stretch: normal;
@@ -176,4 +173,31 @@
 
 .contacts-address a p:hover {
   color: #303030;
+}
+
+.container .contacts-feedback h2 {
+  &::before {
+    bottom: -10px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .contacts-feedback,
+  .contacts-address {
+    width: 100%;
+  }
+
+
+  .contacts-feedback input,
+  .contacts-feedback textarea {
+    width: 100%;
+  }
+
+  .contacts {
+    margin-bottom: 50px;
+  }
+
+  .contacts-btn {
+    width: 100%;
+  }
 }

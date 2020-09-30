@@ -14,6 +14,7 @@
   padding-bottom: 0;
 
 }
+
 .portfolio-list {
   .set-font-Montserrat-regular();
   .reset-ul();
@@ -23,7 +24,10 @@
   align-items: center;
   padding-left: 38px;
   margin-bottom: 28px;
-};
+  flex-wrap: wrap;
+}
+
+;
 
 .portfolio-list a {
   .set-font-Montserrat-regular();
@@ -58,7 +62,7 @@
 }
 
 .portfolio h2,
-.portfolio p{
+.portfolio p {
   .set-font-Montserrat-light();
   font-size: 22px;
   line-height: 22px;
@@ -81,4 +85,29 @@
 
 .portfolio p {
   font-size: 16px;
+}
+
+@media (max-width: @mobile-width) {
+  .portfolio h2 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .portfolio-title {
+    padding-left: 15px;
+  }
+
+  .portfolio p {
+    font-size: 14px;
+  }
+
+  .portfolio-list {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .portfolio-content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
